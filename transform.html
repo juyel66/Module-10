@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title> 
+    <style>
+        .container, .inner2,.inner3, .inner1{
+            width: 200px;
+            height: 200px;
+            
+        }
+    
+
+        .container{
+            border: 2px solid blueviolet;
+            background-color: aqua;
+            transform: scale();
+        }
+
+
+
+        .inner1{
+            border: 2px solid red;
+            background-color: blanchedalmond;
+            transform: scale(0.5, 0.8);
+            
+        }
+        .inner2{
+            border: 2px solid red;
+            background-color: blanchedalmond;
+            /* transform: rotate(45deg); */
+
+            
+
+        }
+        .inner2:hover{
+            transform: rotate(45deg);
+        }
+        
+
+        .inner3{
+            border: 2px solid red;
+            background-color: rgb(255, 221, 0);
+            transform: scale(0.4) rotate(45deg) translateX(200px) translateY(-300px) ;
+
+            /* নিজের ইচ্ছা মতো আরো বিভিন্য ধরনের স্টাইল করা যায় এগুলো দিয়ে  */
+        }
+        
+       
+    </style>       
+</head>
+<body>
+    <h2>Explore Transform and translate</h2>
+    <div class="container">
+        <div class="inner1">Inner 1</div>
+    </div>
+    <div class="container">
+        <div class="inner1">Inner 2</div>
+    </div>
+
+
+
+    <h2>Explore Transform and translate and using <span style="color: red;">hover</span> tag</h2>
+    <div class="container">
+        <div class="inner2">Inner 1</div>
+    </div>
+    <div class="container">
+        <div class="inner2">Inner 2</div>
+    </div>
+
+
+
+    <h2>Explore Transform and translate</h2>
+    <div class="container">
+        <div class="inner3">Inner 1</div>
+    </div>
+    <div class="container">
+        <div class="inner3">Inner 2</div>
+    </div>
+    
+</body>
+</html>
